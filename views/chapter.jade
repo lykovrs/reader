@@ -1,0 +1,9 @@
+a.button.back(href="#/books/{{ currentBookIndex }}/chapters/{{ prewChapterIndex }}") Back
+.chapter
+    p
+        span.title {{ book.title }}
+        span.author  {{ book.author }}
+    h2.chapter-title {{ chapter.title }}
+    //Loop through chapter.paragraphs and display each one with this HTML
+    p(ng-repeat='paragraph in chapter.paragraphs') {{ paragraph }}
+a.button.next(href="#/books/{{ currentBookIndex }}/chapters/{{ nextChapterIndex }}") Next

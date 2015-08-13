@@ -1,0 +1,7 @@
+a.button.back(href="#/books") Back
+.book-detail
+    img(ng-src='{{ book.cover }}', alt='{{ book.title }}')
+    h3.title {{ book.title }}
+    p.author {{ book.author }}
+    p.description {{ book.description }}
+    a.button(href="#/books/{{ currentBookIndex }}/chapters/0") Read

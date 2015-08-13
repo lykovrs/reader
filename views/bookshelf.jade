@@ -1,0 +1,6 @@
+.bookshelf.row
+    .book.col-md-3(ng-repeat='myBook in myBooks')
+        a(href="#/books/{{$index}}")
+            img(ng-src='{{ myBook.cover }}')
+            h3.title {{ myBook.title }}
+            p.author {{ myBook.author }}
